@@ -1,0 +1,29 @@
+{
+  "name": "Bulut Panel",
+  "short_name": "Bulut Panel",
+  "description": "Ürün ve API; görseller temsilîdir.",
+  "start_url": "/tr/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#A950AA",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
