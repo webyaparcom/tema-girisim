@@ -30,6 +30,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "version": "1.0.0",
@@ -766,7 +772,12 @@
         "social_media": false,
         "logo_maxh": "60px",
         "logo_plate": false,
-        "contact_line": "auto"
+        "contact_line": "auto",
+        "logoDark": "",
+        "duzen": "",
+        "slogan": "",
+        "ikinciSutun": "",
+        "iletisimNot": ""
       },
       "version": "1.0.0",
       "icon": "widgets",
@@ -1478,9 +1489,9 @@
         "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "border": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "cta": {
-          "tr": "Teklif al",
-          "en": "Get a quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Demo iste",
+          "en": "Request a demo",
+          "ar": "اطلب عرضًا"
         },
         "cta_url": "teklif-al"
       },
@@ -1533,30 +1544,30 @@
         "bg": "var(--mx-site-bg, #ffffff)",
         "radius": "16px",
         "eyebrow": {
-          "tr": "SaaS ürün geliştirmesi",
-          "en": "SaaS product development",
-          "ar": "تطوير منتج سااس"
+          "tr": "Bulut yazılım girişimi",
+          "en": "Cloud software start-up",
+          "ar": "شركة ناشئة للبرمجيات السحابية"
         },
         "title": {
-          "tr": "Panelden ekibe",
-          "en": "From the panel to the team",
-          "ar": "من اللوحة للفريق"
+          "tr": "Tüm verileriniz tek panelde",
+          "en": "All your data in one dashboard",
+          "ar": "كل بياناتكم في لوحة واحدة"
         },
         "metin": {
-          "tr": "Bulut Panel, ürün ve API geliştirir. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Bulut develops product and API. Images are representative and text is fictional.",
-          "ar": "يطوّر بولوت منتج وواجهات برمجية. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Bulut Panel; izleme, raporlama ve API entegrasyonunu tek yönetim panelinde toplar. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Bulut Panel brings monitoring, reporting and API integrations into a single management dashboard. Images are representative; the text is fictional.",
+          "ar": "تجمع بولوت بانل المراقبة والتقارير وتكاملات API في لوحة إدارة واحدة. الصور تمثيلية والنصوص افتراضية."
         },
         "cta1": {
-          "tr": "Özellikler",
-          "en": "Features",
-          "ar": "ميزات"
+          "tr": "Özellikleri gör",
+          "en": "See the features",
+          "ar": "شاهد الميزات"
         },
         "cta1_url": "hizmetler",
         "cta2": {
           "tr": "Demo iste",
-          "en": "Request demo",
-          "ar": "اطلب عرض تجريبي"
+          "en": "Request a demo",
+          "ar": "اطلب عرضًا تجريبيًا"
         },
         "cta2_url": "teklif-al",
         "scroll_label": {
@@ -1601,9 +1612,9 @@
         "radius": "16px",
         "sure": 1000,
         "title": {
-          "tr": "Ne sunuyorsun?",
-          "en": "What do you offer?",
-          "ar": "ماذا تُقدم؟"
+          "tr": "Panelde neler var?",
+          "en": "What is inside the dashboard?",
+          "ar": "ماذا في اللوحة؟"
         },
         "description": {
           "tr": "Kurgusal demo verileri.",
@@ -1617,9 +1628,9 @@
           "sonek": "%",
           "ikon": "schedule",
           "etiket": {
-            "tr": "Uyarlılık (demo)",
-            "en": "Availability (demo)",
-            "ar": "التوفر (تجريبي)"
+            "tr": "Çalışma süresi (demo)",
+            "en": "Uptime (demo)",
+            "ar": "مدة التشغيل (تجريبي)"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1632,9 +1643,9 @@
           "sonek": " ms",
           "ikon": "speed",
           "etiket": {
-            "tr": "Yanıt süresi",
-            "en": "Response time",
-            "ar": "زمن الاستجابة"
+            "tr": "Ortalama yanıt süresi",
+            "en": "Average response time",
+            "ar": "متوسط زمن الاستجابة"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1647,9 +1658,9 @@
           "sonek": "",
           "ikon": "dashboard",
           "etiket": {
-            "tr": "Pano kartı",
-            "en": "Panel cards",
-            "ar": "بطاقات اللوحة"
+            "tr": "Hazır pano kartı",
+            "en": "Ready dashboard cards",
+            "ar": "بطاقة لوحة جاهزة"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1662,9 +1673,9 @@
           "sonek": "",
           "ikon": "groups",
           "etiket": {
-            "tr": "Takım",
-            "en": "Team",
-            "ar": "الفريق"
+            "tr": "Ürün ekibi",
+            "en": "Product team",
+            "ar": "فريق المنتج"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1695,19 +1706,19 @@
         "badgebg": "#2E6BFF",
         "badgecolor": "#ffffff",
         "badge": {
-          "tr": "Ürün & Pano",
-          "en": "Product & Panel",
-          "ar": "منتج ولوحة"
+          "tr": "Ürün özellikleri",
+          "en": "Product features",
+          "ar": "ميزات المنتج"
         },
         "title": {
-          "tr": "Ne sunuyorsun?",
-          "en": "What do you offer?",
-          "ar": "ماذا تُقدم؟"
+          "tr": "Panelde neler var?",
+          "en": "What is inside the dashboard?",
+          "ar": "ماذا في اللوحة؟"
         },
         "description": {
-          "tr": "Kurulumdan panoya; veriden rapora.",
-          "en": "From setup to panel; from data to report.",
-          "ar": "من التهيئة إلى اللوحة؛ من البيانات إلى التقرير."
+          "tr": "Kurulumdan canlıya geçişe; veriden rapora ihtiyaç duyduğunuz her şey.",
+          "en": "From set-up to go-live, from data to reports: everything you need.",
+          "ar": "من الإعداد إلى الإطلاق، ومن البيانات إلى التقارير: كل ما تحتاجونه."
         }
       },
       "data": [
@@ -1715,78 +1726,78 @@
           "icon": "dashboard",
           "name": {
             "tr": "Yönetim paneli",
-            "en": "Management panel",
-            "ar": "لوحة إدارة"
+            "en": "Management dashboard",
+            "ar": "لوحة الإدارة"
           },
           "description": {
-            "tr": "Gösterge ve uyarı kartları.",
-            "en": "Indicator and warning cards.",
-            "ar": "بطاقات مؤشر وإنذار."
+            "tr": "Özelleştirilebilir gösterge ve uyarı kartları.",
+            "en": "Customisable indicator and alert cards.",
+            "ar": "بطاقات مؤشرات وتنبيهات قابلة للتخصيص."
           }
         },
         {
-          "icon": "stacked_line_chart",
+          "icon": "monitoring",
           "name": {
-            "tr": "İzleme",
-            "en": "Monitoring",
-            "ar": "المراقبة"
+            "tr": "Canlı izleme",
+            "en": "Live monitoring",
+            "ar": "المراقبة المباشرة"
           },
           "description": {
-            "tr": "Yeni veri ve grafik (demo).",
-            "en": "New data and charts (demo).",
-            "ar": "بيانات ورسوم جديدة (تجريبي)."
+            "tr": "Anlık veri akışı ve eşik tabanlı bildirimler.",
+            "en": "Real-time data streams and threshold-based notifications.",
+            "ar": "تدفق بيانات لحظي وإشعارات مبنية على الحدود."
           }
         },
         {
           "icon": "api",
           "name": {
-            "tr": "Entegrasyon",
-            "en": "Integration",
-            "ar": "التكامل"
+            "tr": "API ve entegrasyon",
+            "en": "API & integrations",
+            "ar": "واجهة API والتكامل"
           },
           "description": {
-            "tr": "API eşleme ve test API.",
-            "en": "API mapping and test API.",
-            "ar": "عرائض API واختبار واجهة."
+            "tr": "REST API, webhook ve hazır bağlayıcılar.",
+            "en": "REST API, webhooks and ready-made connectors.",
+            "ar": "واجهة REST وخطافات ويب وموصلات جاهزة."
           }
         },
         {
           "icon": "insights",
           "name": {
-            "tr": "Rapor",
-            "en": "Report",
+            "tr": "Raporlama",
+            "en": "Reporting",
             "ar": "التقارير"
           },
           "description": {
-            "tr": "Haftalık rapor (demo).",
-            "en": "Weekly report (demo).",
-            "ar": "تقرير أسبوعي (تجريبي)."
+            "tr": "Haftalık ve aylık raporları otomatik oluşturma.",
+            "en": "Automatic weekly and monthly reports.",
+            "ar": "إنشاء تقارير أسبوعية وشهرية تلقائيًا."
           }
         },
         {
-          "icon": "security",
+          "icon": "admin_panel_settings",
           "name": {
-            "tr": "Yetki ve rol",
-            "en": "Authorization and role",
-            "ar": "التفويض والدور"
+            "tr": "Rol ve yetki yönetimi",
+            "en": "Roles & permissions",
+            "ar": "إدارة الأدوار والصلاحيات"
           },
           "description": {
-            "tr": "Yetki matrisi ve kayıt.",
-            "en": "Authorization matrix and record.",
-            "ar": "مصفوفة التفويض والسجل."
+            "tr": "Ekip bazlı erişim ve işlem kaydı.",
+            "en": "Team-based access and an audit trail.",
+            "ar": "وصول حسب الفريق وسجل للعمليات."
           }
         },
         {
           "icon": "update",
           "name": {
-            "tr": "Güncelleme",
-            "en": "Update",
-            "ar": "التحديث"
+            "tr": "Sürüm ve güncelleme",
+            "en": "Releases & updates",
+            "ar": "الإصدارات والتحديثات"
           },
           "description": {
-            "tr": "Sürüm ve geçiş planı.",
-            "en": "Version and migration plan.",
-            "ar": "خطة الإصدار والترحيل."
+            "tr": "Kesintisiz güncelleme ve sürüm notları.",
+            "en": "Seamless updates with release notes.",
+            "ar": "تحديثات سلسة مع ملاحظات الإصدار."
           }
         }
       ],
@@ -1814,19 +1825,19 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "badge": {
-          "tr": "Nasıl çalışırız?",
-          "en": "How we work",
-          "ar": "كيف نعمل؟"
+          "tr": "Nasıl başlarsınız?",
+          "en": "How to get started",
+          "ar": "كيف تبدؤون؟"
         },
         "title": {
-          "tr": "Dört adımda süreç",
-          "en": "Process in four steps",
-          "ar": "العملية في أربع خطوات"
+          "tr": "Dört adımda canlıya geçiş",
+          "en": "Four steps to go-live",
+          "ar": "أربع خطوات حتى الإطلاق"
         },
         "description": {
-          "tr": "İlk görüşmeden teslimata aynı akış.",
-          "en": "The same flow, from first meeting to handover.",
-          "ar": "نفس التيار من أول لقاء إلى التسليم."
+          "tr": "Hesap açılışından canlıya geçişe.",
+          "en": "From account set-up to go-live.",
+          "ar": "من إنشاء الحساب إلى الإطلاق."
         },
         "accentText": "#ffffff",
         "cardbg": "var(--mx-site-surface, #ffffff)",
@@ -1836,27 +1847,27 @@
         {
           "year": "01",
           "title": {
-            "tr": "Kurulum",
-            "en": "Setup",
-            "ar": "التثبيت"
+            "tr": "Hesap açılışı",
+            "en": "Account set-up",
+            "ar": "إنشاء الحساب"
           },
           "text": {
-            "tr": "Hesap ve alan ayarı.",
-            "en": "Account and domain setup.",
-            "ar": "تهيئة الحساب والنطاق."
+            "tr": "Alan adı, ekip ve rol tanımları.",
+            "en": "Domain, team and role definitions.",
+            "ar": "تعريف النطاق والفريق والأدوار."
           }
         },
         {
           "year": "02",
           "title": {
-            "tr": "Veri",
-            "en": "Data",
-            "ar": "البيانات"
+            "tr": "Veri aktarımı",
+            "en": "Data import",
+            "ar": "استيراد البيانات"
           },
           "text": {
-            "tr": "İçe aktarma ve eşleştirme.",
-            "en": "Import and matching.",
-            "ar": "استيراد ومطابقة."
+            "tr": "Mevcut sistemlerden içe aktarma ve eşleştirme.",
+            "en": "Importing and mapping from existing systems.",
+            "ar": "الاستيراد والمطابقة من الأنظمة الحالية."
           }
         },
         {
@@ -1867,22 +1878,22 @@
             "ar": "الاختبار"
           },
           "text": {
-            "tr": "Denklik ve performans testi.",
-            "en": "Compatibility and performance test.",
-            "ar": "اختبار توافق وأداء."
+            "tr": "Entegrasyon ve performans testleri.",
+            "en": "Integration and performance tests.",
+            "ar": "اختبارات التكامل والأداء."
           }
         },
         {
           "year": "04",
           "title": {
-            "tr": "Yayın",
-            "en": "Live",
-            "ar": "البث المباشر"
+            "tr": "Canlıya geçiş",
+            "en": "Go-live",
+            "ar": "الإطلاق"
           },
           "text": {
-            "tr": "Ayarlar ve ekip bilgisi.",
-            "en": "Configuration and team notification.",
-            "ar": "تركيب وإخطار الفريق."
+            "tr": "Yayın, ekip eğitimi ve ilk hafta desteği.",
+            "en": "Launch, team training and first-week support.",
+            "ar": "الإطلاق وتدريب الفريق ودعم الأسبوع الأول."
           }
         }
       ],
@@ -1911,14 +1922,14 @@
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
         "accent": "var(--mx-site-primary, #2563eb)",
         "badge": {
-          "tr": "Ekibimiz",
-          "en": "Our team",
-          "ar": "فريقنا"
+          "tr": "Ürün ekibi",
+          "en": "The product team",
+          "ar": "فريق المنتج"
         },
         "title": {
-          "tr": "Sizi karşılayan ekip",
-          "en": "The team that welcomes you",
-          "ar": "الفريق الذي يستقبلك"
+          "tr": "Paneli geliştirenler",
+          "en": "The people building the dashboard",
+          "ar": "من يطوّرون اللوحة"
         },
         "description": {
           "tr": "Kurgusal demo profiller.",
@@ -1932,42 +1943,42 @@
         {
           "name": "Melis K.",
           "role": {
-            "tr": "Ürün",
+            "tr": "Ürün yöneticisi",
             "en": "Product manager",
-            "ar": "منتج"
+            "ar": "مديرة المنتج"
           },
           "bio": {
-            "tr": "7 yıl panele.",
-            "en": "7 years of panel.",
-            "ar": "٧ سنوات في اللوحة."
+            "tr": "B2B yazılım ürünlerinde 7 yıl.",
+            "en": "7 years in B2B software products.",
+            "ar": "7 سنوات في منتجات البرمجيات للشركات."
           },
           "img": ""
         },
         {
           "name": "Can D.",
           "role": {
-            "tr": "Mühendis",
-            "en": "Engineer",
-            "ar": "مهندس"
+            "tr": "Yazılım mühendisi",
+            "en": "Software engineer",
+            "ar": "مهندس برمجيات"
           },
           "bio": {
-            "tr": "6 yıl API.",
-            "en": "6 years of API.",
-            "ar": "٦ سنوات في واجهة."
+            "tr": "API ve altyapı geliştirmede 6 yıl.",
+            "en": "6 years in API and infrastructure development.",
+            "ar": "6 سنوات في تطوير واجهات API والبنية التحتية."
           },
           "img": ""
         },
         {
           "name": "İpek S.",
           "role": {
-            "tr": "Destek",
-            "en": "Support specialist",
-            "ar": "دعم"
+            "tr": "Müşteri başarı uzmanı",
+            "en": "Customer success specialist",
+            "ar": "أخصائية نجاح العملاء"
           },
           "bio": {
-            "tr": "4 yıl onay.",
-            "en": "4 years of approval.",
-            "ar": "٤ سنوات في الموافقة."
+            "tr": "Kurulum ve eğitim desteğinde 4 yıl.",
+            "en": "4 years in onboarding and training support.",
+            "ar": "4 سنوات في دعم الإعداد والتدريب."
           },
           "img": ""
         }
@@ -1998,14 +2009,14 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "starcolor": "#f59e0b",
         "badge": {
-          "tr": "Müşteri yorumları",
-          "en": "Customer reviews",
-          "ar": "تقييمات العملاء"
+          "tr": "Kullanıcı yorumları",
+          "en": "User reviews",
+          "ar": "آراء المستخدمين"
         },
         "title": {
-          "tr": "Müşterilerimiz ne diyor?",
-          "en": "What our customers say",
-          "ar": "ماذا يقول عملاؤنا؟"
+          "tr": "Kullanıcılar ne diyor?",
+          "en": "What users say",
+          "ar": "ماذا يقول المستخدمون؟"
         },
         "description": {
           "tr": "Kurgusal demo yorumlar.",
@@ -2017,48 +2028,48 @@
       },
       "data": [
         {
-          "name": "H. Tekin.",
+          "name": "H. Tekin",
           "role": {
-            "tr": "Kullanıcı",
-            "en": "User",
-            "ar": "مستخدم"
+            "tr": "Operasyon müdürü",
+            "en": "Operations manager",
+            "ar": "مدير العمليات"
           },
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Kurulumu dakik; ekran net.",
-            "en": "Setup on time; screen clear.",
-            "ar": "تركيب في الوقت؛ الشاشة واضحة."
+            "tr": "Kurulum hızlıydı; panel ilk günden anlaşılırdı.",
+            "en": "Set-up was quick and the dashboard was clear from day one.",
+            "ar": "كان الإعداد سريعًا واللوحة واضحة منذ اليوم الأول."
           }
         },
         {
-          "name": "R. Aydın.",
+          "name": "R. Aydın",
           "role": {
-            "tr": "Şirket",
-            "en": "Company",
-            "ar": "شركة"
+            "tr": "Finans yöneticisi",
+            "en": "Finance manager",
+            "ar": "مدير مالي"
           },
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "İçe aktarma sorunsuz; rapor açık.",
-            "en": "Import is smooth; report is transparent.",
-            "ar": "الاستيراد سلس؛ التقرير واضح."
+            "tr": "Veri aktarımı sorunsuz geçti; raporlar işimizi kolaylaştırdı.",
+            "en": "Data import went smoothly and the reports made our work easier.",
+            "ar": "تمّ استيراد البيانات بسلاسة وسهّلت التقارير عملنا."
           }
         },
         {
-          "name": "S. Uçar.",
+          "name": "S. Uçar",
           "role": {
-            "tr": "Yönetici",
-            "en": "Administrator",
-            "ar": "مدير"
+            "tr": "BT yöneticisi",
+            "en": "IT manager",
+            "ar": "مدير تقنية المعلومات"
           },
           "rating": 4,
           "img": "",
           "text": {
-            "tr": "Yetkilendirme doğru; kayıt eksiksiz.",
-            "en": "Authorization is correct; record is complete.",
-            "ar": "التفويض صحيح؛ السجل كامل."
+            "tr": "Rol ve yetki yönetimi ihtiyacımızı tam karşıladı.",
+            "en": "Role and permission management fully met our needs.",
+            "ar": "لبّت إدارة الأدوار والصلاحيات احتياجاتنا بالكامل."
           }
         }
       ],
@@ -2103,19 +2114,19 @@
         "radius": "4px",
         "numara": true,
         "eyebrow": {
-          "tr": "Neyi iyi yaparız?",
-          "en": "What we do well",
-          "ar": "ما نتقنه؟"
+          "tr": "Panelden kareler",
+          "en": "A look inside",
+          "ar": "نظرة داخل اللوحة"
         },
         "title": {
-          "tr": "Ne sunuyorsun?",
-          "en": "What do you offer?",
-          "ar": "ماذا تُقدم؟"
+          "tr": "Panelde neler var?",
+          "en": "What is inside the dashboard?",
+          "ar": "ماذا في اللوحة؟"
         },
         "description": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
-          "en": "Images are representative; this is a setup demo.",
-          "ar": "الصور تمثيلية وهذا عرض تجريبي."
+          "tr": "Görseller temsilîdir; bu bir kurulum örneğidir.",
+          "en": "Images are representative; this is a setup example.",
+          "ar": "الصور تمثيلية؛ وهذا مثال تركيب."
         },
         "ctaLabel": {
           "tr": "Ayrıntı",
@@ -2127,13 +2138,13 @@
         {
           "baslik": {
             "tr": "Yönetim paneli",
-            "en": "Management panel",
-            "ar": "لوحة إدارة"
+            "en": "Management dashboard",
+            "ar": "لوحة الإدارة"
           },
           "metin": {
-            "tr": "Gösterge ve uyarı kartları.",
-            "en": "Indicator and warning cards.",
-            "ar": "بطاقات مؤشر وإنذار."
+            "tr": "Özelleştirilebilir gösterge ve uyarı kartları.",
+            "en": "Customisable indicator and alert cards.",
+            "ar": "بطاقات مؤشرات وتنبيهات قابلة للتخصيص."
           },
           "img": "saas-rapor.webp",
           "alt": {
@@ -2145,14 +2156,14 @@
         },
         {
           "baslik": {
-            "tr": "İzleme",
-            "en": "Monitoring",
-            "ar": "المراقبة"
+            "tr": "Canlı izleme",
+            "en": "Live monitoring",
+            "ar": "المراقبة المباشرة"
           },
           "metin": {
-            "tr": "Yeni veri ve grafik (demo).",
-            "en": "New data and charts (demo).",
-            "ar": "بيانات ورسوم جديدة (تجريبي)."
+            "tr": "Anlık veri akışı ve eşik tabanlı bildirimler.",
+            "en": "Real-time data streams and threshold-based notifications.",
+            "ar": "تدفق بيانات لحظي وإشعارات مبنية على الحدود."
           },
           "img": "saas-zaman.webp",
           "alt": {
@@ -2164,14 +2175,14 @@
         },
         {
           "baslik": {
-            "tr": "Entegrasyon",
-            "en": "Integration",
-            "ar": "التكامل"
+            "tr": "API ve entegrasyon",
+            "en": "API & integrations",
+            "ar": "واجهة API والتكامل"
           },
           "metin": {
-            "tr": "API eşleme ve test API.",
-            "en": "API mapping and test API.",
-            "ar": "عرائض API واختبار واجهة."
+            "tr": "REST API, webhook ve hazır bağlayıcılar.",
+            "en": "REST API, webhooks and ready-made connectors.",
+            "ar": "واجهة REST وخطافات ويب وموصلات جاهزة."
           },
           "img": "saas-ekip-alani.webp",
           "alt": {
@@ -2229,14 +2240,14 @@
         "radius": "4px",
         "showTitle": true,
         "title": {
-          "tr": "Birlikte çalıştığımız kuruluşlar",
-          "en": "Organisations we work with",
-          "ar": "جهات نعمل معها"
+          "tr": "Kullanan sektörler",
+          "en": "Industries using it",
+          "ar": "القطاعات المستخدمة"
         },
         "description": {
-          "tr": "Kurgusal iş ortağı adları; gerçek bir kuruluşa ait değildir.",
-          "en": "Fictional partner names; they do not belong to a real organisation.",
-          "ar": "أسماء شركاء افتراضية لا تعود إلى جهة حقيقية."
+          "tr": "Kurgusal şirket adları; gerçek bir kuruluşa ait değildir.",
+          "en": "Fictional company names; they do not belong to a real organisation.",
+          "ar": "أسماء شركات افتراضية لا تعود إلى جهة حقيقية."
         },
         "listLabel": {
           "tr": "Referans logoları",
@@ -2246,22 +2257,22 @@
       },
       "data": [
         {
-          "name": "Demo Abone"
+          "name": "Demo Lojistik"
         },
         {
-          "name": "Demo Entegrasyon"
+          "name": "Demo Perakende"
         },
         {
-          "name": "Demo Rapor"
+          "name": "Demo Üretim"
         },
         {
-          "name": "Demo Sürüm"
+          "name": "Demo Finans"
         },
         {
-          "name": "Demo Takım"
+          "name": "Demo Sağlık"
         },
         {
-          "name": "Demo Destek"
+          "name": "Demo Eğitim"
         }
       ],
       "veri": {
@@ -2304,51 +2315,91 @@
       },
       "data": [
         {
+          "question": {
+            "tr": "Verilerim nerede saklanıyor?",
+            "en": "Where is my data stored?",
+            "ar": "أين تُخزَّن بياناتي؟"
+          },
+          "answer": {
+            "tr": "Verileriniz seçtiğiniz bölgedeki veri merkezinde şifreli saklanır.",
+            "en": "Your data is stored encrypted in the data centre of the region you choose.",
+            "ar": "تُخزَّن بياناتكم مشفّرة في مركز البيانات بالمنطقة التي تختارونها."
+          },
           "soru": {
-            "tr": "Veriler nerede saklanıyor?",
-            "en": "Where is the data stored?",
-            "ar": "أين تُخزن البيانات?"
+            "tr": "Verilerim nerede saklanıyor?",
+            "en": "Where is my data stored?",
+            "ar": "أين تُخزَّن بياناتي؟"
           },
           "cevap": {
-            "tr": "Bölgesel veri merkezi; demo metnidir.",
-            "en": "Regional data center; this is a demo text.",
-            "ar": "مركز بيانات إقليمي؛ هذا نص تجريبي."
+            "tr": "Verileriniz seçtiğiniz bölgedeki veri merkezinde şifreli saklanır.",
+            "en": "Your data is stored encrypted in the data centre of the region you choose.",
+            "ar": "تُخزَّن بياناتكم مشفّرة في مركز البيانات بالمنطقة التي تختارونها."
           }
         },
         {
+          "question": {
+            "tr": "Deneme sürümü var mı?",
+            "en": "Is there a trial?",
+            "ar": "هل توجد نسخة تجريبية؟"
+          },
+          "answer": {
+            "tr": "Evet; demo talebi sonrası sınırlı süreli deneme hesabı açılır.",
+            "en": "Yes; after a demo request we open a time-limited trial account.",
+            "ar": "نعم؛ بعد طلب العرض نفتح حسابًا تجريبيًا لمدة محدودة."
+          },
           "soru": {
-            "tr": "Fiyatlandırma nasıldı?",
-            "en": "How is the pricing?",
-            "ar": "كيف التسعير?"
+            "tr": "Deneme sürümü var mı?",
+            "en": "Is there a trial?",
+            "ar": "هل توجد نسخة تجريبية؟"
           },
           "cevap": {
-            "tr": "Kullanım ve kalem bazlı; demo örnek vermez.",
-            "en": "Based on usage and items; no demo example.",
-            "ar": "حسب الاستخدام والبنود؛ لا مثال تجريبي."
+            "tr": "Evet; demo talebi sonrası sınırlı süreli deneme hesabı açılır.",
+            "en": "Yes; after a demo request we open a time-limited trial account.",
+            "ar": "نعم؛ بعد طلب العرض نفتح حسابًا تجريبيًا لمدة محدودة."
           }
         },
         {
+          "question": {
+            "tr": "Sitedeki görseller ve veriler gerçek midir?",
+            "en": "Are the images and data on the site real?",
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
+          },
+          "answer": {
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî; adlar, rakamlar ve kişiler kurgusaldır.",
+            "en": "No; this is a setup example. Images are representative; names, figures and people are fictional.",
+            "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
+          },
           "soru": {
             "tr": "Sitedeki görseller ve veriler gerçek midir?",
             "en": "Are the images and data on the site real?",
-            "ar": "هل الصور والبيانات في الموقع حقيقية?"
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
           },
           "cevap": {
-            "tr": "Hayır; bu bir kuruluma örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
-            "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî; adlar, rakamlar ve kişiler kurgusaldır.",
+            "en": "No; this is a setup example. Images are representative; names, figures and people are fictional.",
             "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
           }
         },
         {
+          "question": {
+            "tr": "Fiyatlandırma nasıl yapılır?",
+            "en": "How is pricing set?",
+            "ar": "كيف يُحدَّد التسعير؟"
+          },
+          "answer": {
+            "tr": "Kullanıcı sayısı ve kullanılan modüllere göre aylık plan sunulur.",
+            "en": "A monthly plan is offered based on the number of users and modules used.",
+            "ar": "تُقدَّم خطة شهرية حسب عدد المستخدمين والوحدات المستخدمة."
+          },
           "soru": {
-            "tr": "Fiyatlar nasıl belirlenir?",
-            "en": "How are prices determined?",
-            "ar": "كيف تُحدَّد الأسعار?"
+            "tr": "Fiyatlandırma nasıl yapılır?",
+            "en": "How is pricing set?",
+            "ar": "كيف يُحدَّد التسعير؟"
           },
           "cevap": {
-            "tr": "İhtiyacınıza göre teklifle belirlenir; genel bir fiyat aralığı demo metninde yer almaz.",
-            "en": "A quote based on your needs sets the price; a general range is not shown in this demo text.",
-            "ar": "يُحدَّد السعر عبر عرض سعر حسب احتياجاتك؛ ولا يُذكر نطاق عام في هذا النص التجريبي."
+            "tr": "Kullanıcı sayısı ve kullanılan modüllere göre aylık plan sunulur.",
+            "en": "A monthly plan is offered based on the number of users and modules used.",
+            "ar": "تُقدَّم خطة شهرية حسب عدد المستخدمين والوحدات المستخدمة."
           }
         }
       ],
@@ -2406,9 +2457,9 @@
         "errcolor": "var(--mx-color-danger, #b42318)",
         "radius": "4px",
         "title": {
-          "tr": "Teklif isteyin",
-          "en": "Request a quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Demo isteyin",
+          "en": "Request a demo",
+          "ar": "اطلب عرضًا تجريبيًا"
         },
         "description": {
           "tr": "Bilgilerinizi bırakın; en geç iki iş günü içinde dönüş yaparız. Bu form demodur; e-posta istemciniz açılır, veri saklanmaz.",
@@ -2421,22 +2472,22 @@
           "ar": "Bulut Panel"
         },
         "panelText": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
-          "en": "Images are representative; this is a setup demo.",
-          "ar": "الصور تمثيلية وهذا عرض تجريبي."
+          "tr": "Görseller temsilîdir; bu bir kurulum örneğidir.",
+          "en": "Images are representative; this is a setup example.",
+          "ar": "الصور تمثيلية؛ وهذا مثال تركيب."
         },
         "address": {
           "tr": "Panel Sokak No: 4, Şahinbey, Gaziantep (kurgusal adres)",
           "en": "4 Panel Street, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع لوحة رقم 4، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "ar": "شارع اللوحة رقم 4، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "phone": "+90 342 021 01 01",
         "whatsapp": "903420210101",
         "email": "demo@bulutpanel.example",
         "hours": {
           "tr": "Pzt–Cum 09:30 – 18:00",
-          "en": "Mon–Wed 09:30 – 18:00",
-          "ar": "الاثنين–الأربعاء 09:30 – 18:00"
+          "en": "Mon–Fri 09:30 – 18:00",
+          "ar": "الاثنين–الجمعة 09:30 – 18:00"
         },
         "mapUrl": "",
         "mapEmbed": "",
@@ -2477,9 +2528,9 @@
         },
         "social": [],
         "formTitle": {
-          "tr": "Teklif formu",
-          "en": "Quote form",
-          "ar": "نموذج الطلب"
+          "tr": "Demo formu",
+          "en": "Demo form",
+          "ar": "نموذج العرض"
         },
         "nameLabel": {
           "tr": "Ad Soyad",
@@ -2510,25 +2561,25 @@
           {
             "id": "a",
             "name": {
-              "tr": "Yeni talep",
-              "en": "New request",
-              "ar": "طلب جديد"
+              "tr": "Demo talebi",
+              "en": "Demo request",
+              "ar": "طلب عرض تجريبي"
             }
           },
           {
             "id": "b",
             "name": {
-              "tr": "Ölçü ve keşif",
-              "en": "Measure and survey",
-              "ar": "قياس واستقصاء"
+              "tr": "Fiyat bilgisi",
+              "en": "Pricing information",
+              "ar": "معلومات الأسعار"
             }
           },
           {
             "id": "c",
             "name": {
-              "tr": "Teknik soru",
-              "en": "Technical question",
-              "ar": "سؤال فني"
+              "tr": "Entegrasyon sorusu",
+              "en": "Integration question",
+              "ar": "سؤال عن التكامل"
             }
           },
           {
@@ -2615,7 +2666,8 @@
           "tr": "Merhaba, web sitenizden yazıyorum.",
           "en": "Hello, I am writing from your website.",
           "ar": "مرحبًا، أكتب إليكم من موقعكم الإلكتروني."
-        }
+        },
+        "formAction": ""
       },
       "data": [],
       "veri": {
@@ -2639,32 +2691,32 @@
           "ar": "Bulut Panel"
         },
         "description": {
-          "tr": "Bulut Panel, ürün ve API geliştirir. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Bulut develops product and API. Images are representative and text is fictional.",
-          "ar": "يطوّر بولوت منتج وواجهات برمجية. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Bulut Panel; yönetim paneli, izleme, raporlama ve API entegrasyonu sunan bir bulut yazılım girişimidir. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Bulut Panel is a cloud software start-up offering a management dashboard, monitoring, reporting and API integrations. Images are representative; the text is fictional.",
+          "ar": "بولوت بانل شركة ناشئة للبرمجيات السحابية تقدم لوحة إدارة ومراقبة وتقارير وتكاملات API. الصور تمثيلية والنصوص افتراضية."
         },
         "name2": {
-          "tr": "Pano",
-          "en": "The panel",
-          "ar": "الوحدة"
+          "tr": "Tek pano",
+          "en": "One dashboard",
+          "ar": "لوحة واحدة"
         },
         "spot2": {
-          "tr": "Tüm kartlar aynı pınırda; uyarı ve eşleşme.",
-          "en": "All cards in the same panel; alert and match.",
-          "ar": "كل البطاقات في نفس اللوحة؛ إنذار ومطابقة."
+          "tr": "Tüm kartlar, uyarılar ve raporlar aynı ekranda.",
+          "en": "All cards, alerts and reports on one screen.",
+          "ar": "كل البطاقات والتنبيهات والتقارير على شاشة واحدة."
         },
-        "icon2": "verified",
+        "icon2": "space_dashboard",
         "name3": {
-          "tr": "Geçmiş kaydı",
-          "en": "History record",
-          "ar": "سجل التاريخ"
+          "tr": "İşlem geçmişi",
+          "en": "Audit history",
+          "ar": "سجل العمليات"
         },
         "spot3": {
-          "tr": "Her işlem kayıt ve onay iziyle.",
-          "en": "Every action with record and approval trace.",
-          "ar": "كل إجراء بسجل وآثار موافقة."
+          "tr": "Her işlem kayıt ve onay izi ile saklanır.",
+          "en": "Every action is kept with a record and approval trail.",
+          "ar": "يُحفظ كل إجراء مع سجل وأثر موافقة."
         },
-        "icon3": "schedule",
+        "icon3": "history",
         "img": "saas-ekip-alani.webp",
         "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
@@ -2730,8 +2782,8 @@
         },
         "description": {
           "tr": "Pzt–Cum 09:30 – 18:00",
-          "en": "Mon–Wed 09:30 – 18:00",
-          "ar": "الاثنين–الأربعاء 09:30 – 18:00"
+          "en": "Mon–Fri 09:30 – 18:00",
+          "ar": "الاثنين–الجمعة 09:30 – 18:00"
         },
         "phone": "+90 342 021 01 01",
         "whatsapp": "903420210101",
@@ -2739,7 +2791,7 @@
         "address": {
           "tr": "Panel Sokak No: 4, Şahinbey, Gaziantep (kurgusal adres)",
           "en": "4 Panel Street, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع لوحة رقم 4، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "ar": "شارع اللوحة رقم 4، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "mapsUrl": "",
         "waMessage": {
@@ -2753,9 +2805,9 @@
           "ar": "اتصل بنا"
         },
         "callText": {
-          "tr": "Hafta içi 09:00 – 18:00",
-          "en": "Weekdays 09:00 – 18:00",
-          "ar": "أيام الأسبوع 09:00 – 18:00"
+          "tr": "Pzt–Cum 09:30 – 18:00",
+          "en": "Mon–Fri 09:30 – 18:00",
+          "ar": "الاثنين–الجمعة 09:30 – 18:00"
         },
         "callBtn": {
           "tr": "Ara",
@@ -2847,25 +2899,25 @@
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "radius": "4px",
         "title": {
-          "tr": "Panele davetli",
-          "en": "Invited to the panel",
-          "ar": "مُدّعى للوحة"
+          "tr": "Paneli birlikte deneyelim",
+          "en": "Let us try the dashboard together",
+          "ar": "لنجرّب اللوحة معًا"
         },
         "text": {
-          "tr": "İki iş günü içinde dönüş yaparız. Bu demo sitede veri saklanmaz.",
-          "en": "We reply within two business days. No data is stored on this demo site.",
-          "ar": "نردّ خلال يومي عمل. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
+          "tr": "Demo için formu doldurun; iki iş günü içinde dönüş yaparız. Bu demo sitede veri saklanmaz.",
+          "en": "Fill in the form for a demo; we reply within two business days. No data is stored on this demo site.",
+          "ar": "املأ النموذج لطلب عرض؛ نردّ خلال يومي عمل. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
         },
         "btn1Label": {
-          "tr": "Formu doldurun",
-          "en": "Fill the form",
-          "ar": "املأ النموذج"
+          "tr": "Demo iste",
+          "en": "Request a demo",
+          "ar": "اطلب عرضًا تجريبيًا"
         },
         "btn1Url": "teklif-al",
         "btn2Label": {
-          "tr": "Hizmetleri gör",
-          "en": "See services",
-          "ar": "شاهد الخدمات"
+          "tr": "Özellikleri gör",
+          "en": "See the features",
+          "ar": "شاهد الميزات"
         },
         "btn2Url": "hizmetler",
         "number": "903420210101",
@@ -2882,8 +2934,8 @@
         },
         "hours": {
           "tr": "Pzt–Cum 09:30 – 18:00",
-          "en": "Mon–Wed 09:30 – 18:00",
-          "ar": "الاثنين–الأربعاء 09:30 – 18:00"
+          "en": "Mon–Fri 09:30 – 18:00",
+          "ar": "الاثنين–الجمعة 09:30 – 18:00"
         },
         "hoursLabel": {
           "tr": "Çalışma saatleri",
@@ -3056,7 +3108,7 @@
         "address": {
           "tr": "Panel Sokak No: 4, Şahinbey, Gaziantep (kurgusal adres)",
           "en": "4 Panel Street, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع لوحة رقم 4، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "ar": "شارع اللوحة رقم 4، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "phone": "+90 342 021 01 01",
         "email": "demo@bulutpanel.example",

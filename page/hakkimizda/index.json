@@ -21,9 +21,9 @@
   },
   "pathnext": "",
   "description": {
-    "tr": "Ürün ve API; görseller temsilîdir.",
-    "en": "Product and API; images are representative.",
-    "ar": "منتج وواجهات برمجية؛ الصور تمثيلية."
+    "tr": "Bulut yazılım girişimi; görseller temsilîdir.",
+    "en": "Cloud software start-up; images are representative.",
+    "ar": "شركة ناشئة للبرمجيات السحابية؛ الصور تمثيلية."
   },
   "spot": {
     "tr": "",
@@ -42,6 +42,6 @@
     "ar": "من نحن"
   },
   "text": {},
-  "update": "2026-11-05T23:44:34.933Z",
+  "update": "2026-11-12T07:35:50.949Z",
   "date": "2026-10-30"
 }
