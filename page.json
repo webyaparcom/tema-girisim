@@ -8,9 +8,9 @@
         "ar": "خدماتنا"
       },
       "description": {
-        "tr": "Kurulumdan panoya; veriden rapora.",
-        "en": "From setup to panel; from data to report.",
-        "ar": "من التهيئة إلى اللوحة؛ من البيانات إلى التقرير."
+        "tr": "Kurulumdan canlıya geçişe; veriden rapora ihtiyaç duyduğunuz her şey.",
+        "en": "From set-up to go-live, from data to reports: everything you need.",
+        "ar": "من الإعداد إلى الإطلاق، ومن البيانات إلى التقارير: كل ما تحتاجونه."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -49,9 +49,9 @@
       },
       "pathnext": "",
       "description": {
-        "tr": "Ürün ve API; görseller temsilîdir.",
-        "en": "Product and API; images are representative.",
-        "ar": "منتج وواجهات برمجية؛ الصور تمثيلية."
+        "tr": "Bulut yazılım girişimi; görseller temsilîdir.",
+        "en": "Cloud software start-up; images are representative.",
+        "ar": "شركة ناشئة للبرمجيات السحابية؛ الصور تمثيلية."
       }
     },
     {

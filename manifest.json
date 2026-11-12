@@ -1,7 +1,7 @@
 {
   "name": "Bulut Panel",
   "short_name": "Bulut Panel",
-  "description": "Ürün ve API; görseller temsilîdir.",
+  "description": "Yönetim paneli, izleme, raporlama ve API entegrasyonu sunan bulut yazılım girişimi; görseller temsilîdir.",
   "start_url": "/tr/",
   "scope": "/",
   "display": "standalone",

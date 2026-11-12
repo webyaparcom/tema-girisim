@@ -2,14 +2,14 @@
   "order": false,
   "user": false,
   "description": {
-    "tr": "Ürün ve API; görseller temsilîdir.",
-    "en": "Product and API; images are representative.",
-    "ar": "منتج وواجهات برمجية؛ الصور تمثيلية."
+    "tr": "Yönetim paneli, izleme, raporlama ve API entegrasyonu sunan bulut yazılım girişimi; görseller temsilîdir.",
+    "en": "A cloud software start-up offering a management dashboard, monitoring, reporting and API integrations; images are representative.",
+    "ar": "شركة ناشئة لبرمجيات سحابية تقدم لوحة إدارة ومراقبة وتقارير وتكاملات API؛ الصور تمثيلية."
   },
   "keyword": {
-    "tr": "saas, ürün, api",
-    "en": "saas, product, api",
-    "ar": "سااس، منتج، واجهات برمجة"
+    "tr": "saas, yönetim paneli, bulut yazılım, api entegrasyonu, raporlama",
+    "en": "saas, dashboard, cloud software, api integration, reporting",
+    "ar": "ساس، لوحة إدارة، برمجيات سحابية، تكامل API، تقارير"
   },
   "category": "Kurumsal",
   "name": "Bulut Panel",

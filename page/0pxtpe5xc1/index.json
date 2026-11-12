@@ -6,14 +6,14 @@
     "ar": "خدماتنا"
   },
   "description": {
-    "tr": "Kurulumdan panoya; veriden rapora.",
-    "en": "From setup to panel; from data to report.",
-    "ar": "من التهيئة إلى اللوحة؛ من البيانات إلى التقرير."
+    "tr": "Kurulumdan canlıya geçişe; veriden rapora ihtiyaç duyduğunuz her şey.",
+    "en": "From set-up to go-live, from data to reports: everything you need.",
+    "ar": "من الإعداد إلى الإطلاق، ومن البيانات إلى التقارير: كل ما تحتاجونه."
   },
   "keyword": {
-    "tr": "Ürün & Pano",
-    "en": "Product & Panel",
-    "ar": "منتج ولوحة"
+    "tr": "Ürün özellikleri",
+    "en": "Product features",
+    "ar": "ميزات المنتج"
   },
   "path": "hizmetler",
   "icon": "work",
@@ -36,5 +36,5 @@
     "ar": "خدماتنا"
   },
   "date": "2026-11-05T18:57:21.808Z",
-  "update": "2026-11-05T23:44:34.930Z"
+  "update": "2026-11-12T07:35:50.945Z"
 }

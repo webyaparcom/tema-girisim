@@ -27,9 +27,9 @@
   "index": 1,
   "url": "",
   "text": {
-    "tr": "<h2>Vizyonumuz</h2>\n<p>Ölçülü üretimi, net fiyatı ve zamanında teslimiyle bölge referansı olmak.</p>",
-    "en": "<h2>Our vision</h2>\n<p>To be the regional reference with measured output, clear pricing and on-time delivery.</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون مرجع المنطقة بإنتاج متوازن وسعر واضح وتسليم في الوقت.</p>"
+    "tr": "<h2>Vizyonumuz</h2>\n<p>Bölgenin güvenilir bulut yazılım girişimlerinden biri olmak.</p>",
+    "en": "<h2>Our vision</h2>\n<p>To become one of the region’s trusted cloud software start-ups.</p>",
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون من الشركات الناشئة الموثوقة للبرمجيات السحابية في المنطقة.</p>"
   },
   "title": {
     "tr": "Vizyon",
@@ -37,7 +37,7 @@
     "ar": "الرؤية"
   },
   "date": "2026-11-05T18:57:21.665Z",
-  "update": "2026-11-05T23:44:34.952Z",
+  "update": "2026-11-12T07:35:50.972Z",
   "sablonIzi": "c3ebee5f049bdfb4",
   "sablonIziDil": {
     "en": "67bb554c6c4d5984",
