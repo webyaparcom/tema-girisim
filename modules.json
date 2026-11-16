@@ -1470,7 +1470,7 @@
       ],
       "desing": {
         "stil": "cta-butonlu",
-        "logo": "{{logo}}",
+        "logo": "logo-ust.png",
         "logo_h": "44px",
         "max": "1200px",
         "showlang": true,
