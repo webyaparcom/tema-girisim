@@ -1,72 +1,59 @@
-/* menu-10 — Şeffaf overlay menü (31 Eki 2026, G8-A).
-   Yer tutucular: m10stil m10menu m10cta m10logoacik — koşulsuz. {{langbar}} moduleRender çözer.
-   Öğeler: @home@ + pagesetting sayfaları (status play, category "") + json.data[] ({name{}, url}).
-   logo_acik verilirse köke modulex-m10-logolu-acik sınıfı eklenir (şeffaf durumda açık logo). Yalnız var + klasik for. */
-function m10Dil(v) {
-  if (v == null) { return ""; }
-  if (typeof v !== "object") { return String(v); }
+/* menu-ada — Yüzen kapsül (ada) menü + mobil alt çekmece (15 Kas 2026, G3 · mcp:webmaker/20261115-202336-i5p2).
+   Yer tutucular (koşulsuz): adasinif adaogeler adasayfa adacta. {{langbar}} motor çözer; @anahtar@ lang.json'dan (24 dil).
+   Öğeler: @home@ + pagesetting sayfaları (status play, category "") + json.data[] ek bağlantıları ({name{dil…}, url}).
+   Metin varsayılanı yok: CTA yalnız desing.cta_ad (dil sözlüğü) + cta_url doluysa basılır — dil listesi ezberi yok (D18). */
+const pick = (v) => {
+  if (v == null) return "";
+  if (typeof v !== "object") return String(v);
   if (typeof wmPickLang === "function") { try { return wmPickLang(v, json.lang) || ""; } catch (e) { /* alt satır */ } }
-  return v[json.lang] != null ? String(v[json.lang]) : (v.tr != null ? String(v.tr) : (v.en != null ? String(v.en) : ""));
-}
-function m10Esc(s) {
-  return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-}
-function m10Href(v) {
-  var s = String(v == null ? "" : v).trim();
-  if (!s) { return ""; }
-  if (/^\s*(javascript|vbscript|data):/i.test(s)) { return ""; }
-  if (/^(https?:)?\/\//i.test(s) || /^(mailto:|tel:|#)/i.test(s)) { return s; }
+  return String(v[json.lang] ?? Object.values(v)[0] ?? "");
+};
+const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const href = (v) => {
+  const s = String(v ?? "").trim();
+  if (!s || /^\s*(javascript|vbscript|data):/i.test(s)) return "";
+  if (/^(https?:)?\/\//i.test(s) || /^(mailto:|tel:|#)/i.test(s)) return s;
   return wxLangInternalHref(s);
-}
+};
+const dogru = (v, d) => (v === undefined || v === null || v === "") ? d : !(v === false || v === "false" || v === 0 || v === "0");
 
-var m10Des = json.desing || {};
-var m10Sayfa = page || {};
-var m10Stil = String(m10Des.stil || "sade").trim();
-if (m10Stil !== "sade" && m10Stil !== "cta-butonlu") { m10Stil = "sade"; }
+const { desing: des = {}, data: ek = [] } = json;
+const sayfa = page || {};
+const stil = ["cam", "dolu", "cizgi"].includes(String(des.stil || "").trim()) ? String(des.stil).trim() : "cam";
 
-/* --- menü --- */
-var m10Menu = '<li><a class="modulex-m10-oge" href="' + wxLangInternalHref("") + '"' + (!m10Sayfa.path ? ' aria-current="page"' : "") + ">@home@</a></li>";
-var m10Ps = (webmakerdata && webmakerdata.pagesetting && Array.isArray(webmakerdata.pagesetting.data))
-  ? webmakerdata.pagesetting.data.find(function (it) { return it && it.modulestatus && it.modulestatus.page; })
+const ogeler = [{ ad: "@home@", href: wxLangInternalHref(""), aktif: !sayfa.path }];
+const ps = Array.isArray(webmakerdata?.pagesetting?.data)
+  ? webmakerdata.pagesetting.data.find((it) => it?.modulestatus?.page)
   : null;
-if (m10Ps && webmakerdata[m10Ps.path] && Array.isArray(webmakerdata[m10Ps.path].data)) {
-  var m10Satirlar = webmakerdata[m10Ps.path].data;
-  for (var m10i = 0; m10i < m10Satirlar.length; m10i++) {
-    var m10R = m10Satirlar[m10i] || {};
-    if (m10R.status !== "play" || (m10R.category || "") !== "") { continue; }
-    var m10Ad = m10Dil(m10R.name).trim();
-    if (!m10Ad) { continue; }
-    var m10Aktif = !!m10Sayfa.path && m10Sayfa.path === m10R.path;
-    m10Menu += '<li><a class="modulex-m10-oge" href="' + m10Esc(wxLangInternalHref(m10R.pathnext || m10R.path || "")) + '"' + (m10Aktif ? ' aria-current="page"' : "") + ">" + m10Esc(m10Ad) + "</a></li>";
-  }
+const satirlar = ps && Array.isArray(webmakerdata?.[ps.path]?.data) ? webmakerdata[ps.path].data : [];
+for (const r of satirlar) {
+  if (!r || r.status !== "play" || (r.category || "") !== "") continue;
+  const ad = pick(r.name).trim();
+  if (!ad) continue;
+  ogeler.push({ ad: esc(ad), href: wxLangInternalHref(r.pathnext || r.path || ""), aktif: !!sayfa.path && sayfa.path === r.path });
 }
-var m10Ek = Array.isArray(json.data) ? json.data : [];
-for (var m10j = 0; m10j < m10Ek.length; m10j++) {
-  var m10E = m10Ek[m10j] || {};
-  var m10EAd = m10Dil(m10E.name || m10E.text).trim();
-  var m10EUrl = m10Href(m10E.url || m10E.href);
-  if (m10EAd && m10EUrl) { m10Menu += '<li><a class="modulex-m10-oge" href="' + m10Esc(m10EUrl) + '">' + m10Esc(m10EAd) + "</a></li>"; }
+for (const e of Array.isArray(ek) ? ek : []) {
+  const ad = pick(e?.name ?? e?.text).trim();
+  const url = href(e?.url ?? e?.href);
+  if (ad && url) ogeler.push({ ad: esc(ad), href: url, aktif: false });
 }
 
-/* --- CTA (yalnız cta-butonlu) --- */
-var m10Cta = "";
-var m10CtaAd = m10Dil(m10Des.cta).trim();
-var m10CtaUrl = m10Href(m10Des.cta_url);
-if (m10Stil === "cta-butonlu" && m10CtaAd && m10CtaUrl) {
-  m10Cta = '<a class="modulex-m10-cta" href="' + m10Esc(m10CtaUrl) + '">' + m10Esc(m10CtaAd) + '<span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>';
-}
+const li = (o, sinif) => `<li><a class="${sinif}" href="${esc(o.href)}"${o.aktif ? ' aria-current="page"' : ""}>${o.ad}</a></li>`;
+const adaOgeler = ogeler.map((o) => li(o, "modulex-ada-oge")).join("");
+const adaSayfa = ogeler.map((o) => li(o, "modulex-ada-sayfa-oge")).join("");
 
-/* --- açık logo --- */
-var m10LogoAcik = "";
-var m10LA = String(m10Des.logo_acik || "").trim();
-if (m10LA && !/^\s*(javascript|vbscript|data):/i.test(m10LA)) {
-  var m10LAYol = (m10LA.charAt(0) === "/" || /^https?:\/\//i.test(m10LA)) ? m10LA : "/img/" + m10LA;
-  m10LogoAcik = '<img class="modulex-m10-logo-acik" src="' + m10Esc(m10LAYol) + '" alt="" aria-hidden="true" loading="eager" decoding="async" />';
-  html = html.replace('class="modulex-m10 ', 'class="modulex-m10 modulex-m10-logolu-acik ');
-}
+const ctaAd = pick(des.cta_ad).trim();
+const ctaUrl = href(des.cta_url);
+const adaCta = ctaAd && ctaUrl ? `<a class="modulex-ada-cta" href="${esc(ctaUrl)}">${esc(ctaAd)}</a>` : "";
+
+const adaSinif = [
+  ` modulex-ada--${stil}`,
+  dogru(des.sticky, true) ? " modulex-ada--sticky" : "",
+  adaCta ? " modulex-ada--ctali" : "",
+].join("");
 
 html = html
-  .replace(/\{\{m10stil\}\}/g, function () { return m10Stil; })
-  .replace(/\{\{m10menu\}\}/g, function () { return m10Menu; })
-  .replace(/\{\{m10cta\}\}/g, function () { return m10Cta; })
-  .replace(/\{\{m10logoacik\}\}/g, function () { return m10LogoAcik; });
+  .replaceAll("{{adasinif}}", () => adaSinif)
+  .replaceAll("{{adaogeler}}", () => adaOgeler)
+  .replaceAll("{{adasayfa}}", () => adaSayfa)
+  .replaceAll("{{adacta}}", () => adaCta);
