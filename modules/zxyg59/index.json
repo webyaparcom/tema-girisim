@@ -1,7 +1,7 @@
 {
   "name": "Menü Ada — Yüzen kapsül",
   "description": "Sayfa kenarına yapışmayan, üstten boşluklu yuvarlak «ada» çubuk: logo · ortada nokta vurgulu menü · dil seçici + isteğe bağlı CTA hapı. Cam (backdrop blur) / dolu / çizgi varyantı; kaydırınca kapsül küçülür. ≤1024px: alttan açılan çekmece (2 sütun büyük dokunma hedefi, odak tuzağı, Esc). Metinler lang.json (@home@ @menu@ @menu-toggle@ @menu-close@ @navigation@) + sayfa adları; CTA metni desing.cta_ad dil sözlüğü (boşsa basılmaz). Renkler yalnız desing + var(--mx-site-*) — koyu mod otomatik; mantıksal CSS → RTL.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "icon": "rounded_corner",
   "category": "menu",
   "subCategory": "ada",
@@ -9,6 +9,7 @@
   "desing": {
     "stil": "cam",
     "logo": "{{logo}}",
+    "logoimg": "",
     "logo_h": "40px",
     "max": "1180px",
     "bosluk": "14px",
